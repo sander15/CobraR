@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banners-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  background-color: #000;
+}
+
+.banners-container:hover .banner {
+  opacity: 0.3;
+}
+
+.banners-container .banner {
+  display: table-cell;
+  height: 100%;
+  width: 25%;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.banners-container .banner:hover {
+  width: 50%;
+  opacity: 1;
+}
+
+.banners-container .banner .banner-copy {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {  
+  div.banners-container {
+    display: inline-grid;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+
+  div.banners-container .banner {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+}
+
+.banners-container .banner:hover {
+  width: 100%;
+  opacity: 1;
+}
