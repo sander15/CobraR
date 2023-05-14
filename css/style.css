@@ -52,7 +52,7 @@ a {
   color: white;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-device-width: 600px) {
   div.banners-container {
     display: inline-grid;
     width: 100%;
