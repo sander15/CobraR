@@ -116,4 +116,27 @@ a {
     padding-left: 0px;
     font-size: 12px;
   }
+  
+.CobraText {
+  font-size: 15px;
+  padding-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.Gallery {
+  font-size: 15px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.GalleryPics img {
+  margin: 3px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+  display: inline;
+}
 }
